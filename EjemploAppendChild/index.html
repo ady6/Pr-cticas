@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Añadir elementos</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="script/script.js"></script>
+</head>
+<body>
+	<h1>Prácticando con appendChild</h1>
+	<fieldset>
+		<legend>Añadiendo elementos a la lista</legend>
+		<label for="nombre">Nombre: </label>
+		<input type="text" id="nombre">
+		<input type="button" value="Incluir" 
+			onclick="add();">
+		<br/><br/>
+
+		<label for="lista">Elementos incluidos: </label>
+		<select id="lista" onchange="recuperar();">
+			<option value="Pepe">Pepe</option>
+		</select>
+	</fieldset>
+</body>
+</html>

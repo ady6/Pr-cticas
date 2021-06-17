@@ -1,0 +1,11 @@
+fieldset {
+	position: relative;
+	width: 60%;
+	left: 20%;
+	font-size: 25px;
+}
+
+input, select {
+	font-size: 25px;
+}
+
