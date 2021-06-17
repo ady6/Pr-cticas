@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="description" content="Facturación de artículos de informática">
+  	<meta name="keywords" content="Facturas,ordenadores,periféricos">
+
+	<title>Consulta de facturas</title>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+</head>
+<body>
+	<header>
+		<img src="imagenes/factura.png" alt="Logotipo">
+		<p>Consulta tus facturas</p>
+	</header>
+	<main>
+	<p>
+	<label for="lista">Selecciona factura para consultar: </label>
+	<select id="lista" onchange="leerFactura();"></select>		
+	</p>
+	<fieldset>
+		<legend id="leyenda">Factura: </legend>
+
+		<div id="datosFactura"></div>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Producto</th>
+					<th class='dere'>Cantidad</th>
+					<th class='dere'>Precio</th>
+					<th class='dere'>Subtotal</th>
+				</tr>	
+			</thead>
+			<tbody id="detalle">
+			</tbody>	
+		</table>
+	</fieldset>
+	</main>
+	<footer>
+		Ejercicio para los alumnos de Campus FP Getafe - Las Margaritas
+	</footer>
+</body>
+</html>
