@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description"
+	content="Mi web para el hito">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<title>Web de viviendas de protección oficial</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+	<body background="imagenes/foto.jpg">
+
+	<h1>Viviendas de protección oficial</h1>
+
+<form action="alquilar.php" method="GET">
+	<fieldset>
+	<legend>Características de la vivienda</legend>
+	<p>
+		<label for="nombre">Nombre: </label>
+		<input type="text" name="nombre" required 
+			placeholder="Escribe tu nombre">
+	</p>
+	<p>
+		<label for="correo">Email: </label>
+		<input type="email" name="correo">
+	</p>
+	<p>
+		<label for="fechaNac">Fecha Nacimiento: </label>
+		<input type="date" name="fechaNac">
+	</p>
+	<p>
+		<label>Seleccione la zona que más le guste</label>
+	    <select id="zona">
+	    <option value="23">Ciudad Lineal</option>
+	    <option value="25">Hortaleza</option>
+	    <option value="30">Retiro</option>
+	    <option value="20">San Blas</option>
+	    </select>
+    </p>
+    <p>
+	    <label>¿De qué tamaño quiere la vivienda?</label><br>
+	    <input type="radio" id="pqñ" name="dormitorio" value="pqñ">
+	    <label for="pqñ">1 dormitorio, 50 metros</label><br>
+	    <input type="radio" id="med"  name="dormitorio" value="med">
+	    <label for="med">2 dormitorios, 70 metros</label> <br>
+	    <input type="radio" id="grn"  name="dormitorio" value="grn">
+	    <label for="grn">3 dormitorios, 100 metros</label>
+    </p>
+    <p>
+    	<label>Seleccione las mejoras que desee: </label><br>
+        <input type="checkbox" id="calefaccion">
+        <label for="calefaccion">Calefacción</label><br>
+        <input type="checkbox" id="aire">
+        <label for="aire">Aire acondicionado</label> <br>
+        <input type="checkbox" id="bañera">
+        <label for="bañera">Bañera hidromasaje</label>
+        </p>
+        <p>Escriba si necesita comunicarnos algún dato de importancia:</p>
+		<p>
+		<textarea name="mensaje" rows="8" cols="90">
+		</textarea>
+		</p>
+
+    
+    <input type="button" value="Calcular precio" onclick="calcularPrecio()"> <br> <br>
+    
+	<input type="submit" value="Enviar">
+
+	<br> <br>
+
+	<div id="salida"></div>
+
+	</fieldset>
+</form>
+
+<img src="imagenes/ayto.png">
+
+</body>
+</html>
