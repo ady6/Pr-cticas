@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="description"
+			content="Canciones">
+			<meta name="viewport"
+			content="width=device-width, initial-scale=1.0">
+		<title>Web sobre canciones</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+
+	<body>
+		<main>
+
+			<header>La mejor web de música</header>
+
+			<nav id="imagen1"><img src="imagenes/imagen1.jpeg"></nav> <nav id="enlace">
+			<h3>¡Páginas sobre música!</h3>
+			<a href="http://www.blog.musicacreativa.com/">Blog música creativa</a><br>
+			<a href="https://www.lacupulamusic.com/blog/">Blog la cúpula music</a><br>
+			<a href="https://www.mariajesusmusica.com/mis-blogs.html">Blog Maria Jesús música</a><br>
+			<a href="https://www.hipermusic.es/blog/blogs-de-musica-todos-los-estilos/">Blog hipermusic</a><br>
+			<a href="http://fungaalafia.blogspot.com/">Blog aula de música</a><br>
+			</nav>
+
+			<section>
+				<p> <button onclick="mostrarcanciones();">Todas las canciones </button> </p>
+				<ul id="canciones">
+				</ul>
+				<p> <button onclick="mostrarqueen();">Queen </button> </p>
+				<ul id="queen">
+				</ul>
+				<p> <button onclick="mostrarcoldplay();">Coldplay </button> </p>
+				<ul id="coldplay">
+				</ul>
+			</section>
+
+			<aside>
+				<h3>Selecciona una canción</h3>
+				<select id="listado" onchange="cargarfoto();">
+			    </select><br><br>
+			    <a id="enlacefoto" href="https://www.youtube.com/watch?v=0-EF60neguk">
+			    <img id="imagen" src="imagenes/0.jpg" > 
+			    </a>
+
+			</aside>
+
+			<footer>¡Gracias por visitarnos!</footer>
+		</main>
+	</body>
+</html>

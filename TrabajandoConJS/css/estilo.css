@@ -1,0 +1,68 @@
+html {
+	background-color: #0174C5;
+}
+
+header {
+grid-area: cabecera;
+text-align: center;
+font-family: "times new roman";
+font-size: 50px;
+text-shadow: 2px 2px pink;
+}
+
+#imagen1 {
+grid-area: imagen;
+padding-left: 30%;
+
+}
+
+#enlace {
+grid-area: enlace;
+}
+
+section {
+grid-area: secc1;
+}
+
+aside {
+grid-area: secc2;
+}
+
+footer {
+grid-area: pie;
+text-align: center;
+font-family: "times new roman";
+font-size: 30px;
+text-shadow: 2px 2px aqua;																																				q
+}
+
+main {
+display: grid;
+  grid-template-areas:
+    'imagen imagen imagen cabecera cabecera cabecera'
+    'enlace enlace enlace enlace enlace enlace'
+    'secc1 secc1 secc1 secc2 secc2 secc2'
+    'pie pie pie pie pie pie';
+  grid-gap: 10px;
+  background-color: #30AAFF;
+  padding: 10px;
+}
+
+main > * {
+	background-color: #ADFFFD;
+    padding: 10px;
+}
+
+@media screen and (max-width:1000px){
+	main {
+	  grid-template-areas:
+	    'imagen imagen imagen imagen imagen imagen'
+	    'cabecera cabecera cabecera cabecera cabecera cabecera'
+	    'enlace enlace enlace enlace enlace enlace'
+	    'secc1 secc1 secc1 secc1 secc1 secc1'
+	    'secc2 secc2 secc2 secc2 secc2 secc2'
+	    'pie pie pie pie pie pie';
+	  grid-gap: 7px;
+	  padding: 7px;
+	}
+}
