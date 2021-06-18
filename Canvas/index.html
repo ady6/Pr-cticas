@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejemplo Canvas</title>
+</head>
+<body>
+<canvas id="miCanvas" width="1000" height="800" style="border:10px solid #46FCFF;"> </canvas>
+<script>
+var canvas = document.getElementById("miCanvas");
+var ctx = canvas.getContext("2d");
+
+ctx.lineWidth=5;
+ctx.strokeStyle = "aqua";
+ctx.beginPath();
+ctx.arc(200,200,160,0,2*Math.PI);
+ctx.fillStyle="aqua";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(400,200,140,0,2*Math.PI);
+ctx.fillStyle="aqua";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(200,500,160,0,2*Math.PI);
+ctx.fillStyle="aqua";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(400,500,140,0,2*Math.PI);
+ctx.fillStyle="aqua";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(600,500,160,0,2*Math.PI);
+ctx.fillStyle="aqua";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(600,200,160,0,2*Math.PI);
+ctx.fillStyle="aqua";
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(400,350,140,0,2*Math.PI);
+ctx.fillStyle="yellow";
+ctx.lineWidth=5;
+ctx.strokeStyle = "#DED94F";
+ctx.fill();
+ctx.stroke();
+
+ctx.font = "110px Arial";
+ctx.fillStyle = "black";
+ctx.fillText("🐝",323,380);
+
+ctx.font = "40px Arial";
+ctx.fillStyle = "black";
+ctx.fillText("🐝",700,400);
+
+ctx.font = "40px Arial";
+ctx.fillStyle = "black";
+ctx.fillText("🐝",900,800);
+
+ctx.font = "40px Arial";
+ctx.fillStyle = "black";
+ctx.fillText("🐝",10,300);
+
+ctx.font = "40px Arial";
+ctx.fillStyle = "black";
+ctx.fillText("🐝",400,750);
+
+ctx.font = "40px Arial";
+ctx.fillStyle = "black";
+ctx.fillText("🐝",700,15);
+
+ctx.font = "40px Arial";
+ctx.fillStyle = "black";
+ctx.fillText("🐝",867,120);
+
+ctx.font = "40px Arial";
+ctx.fillStyle = "black";
+ctx.fillText("🐝",200,600);
+
+</script> 
+
+</body>
+</html>
+
