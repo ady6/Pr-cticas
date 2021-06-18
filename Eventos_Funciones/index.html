@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8"/>
+   <title>Eventos y su manejo mediante funciones</title>
+   <link rel="stylesheet" href="css/estilo.css"/>
+   <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body onmousemove="mostrarPosicion();">
+
+	<p id="posicion"></p>
+	<!--
+		Gestión de eventos mediante atributos HTML
+		this hace referencia al elemento donde se origino el evento.
+	 -->
+	<p onclick="var f = new Date();this.innerText = 'Pulsado '+f">
+		Párrafo 1
+	</p>
+	<p onclick="var f = new Date();this.innerText = 'Pulsado '+f">
+		Párrafo 2
+	</p>
+	<p onclick="var f = new Date();this.innerText = 'Pulsado '+f">
+		Párrafo 3
+	</p>
+	<p onclick="var f = new Date();this.innerText = 'Pulsado '+f">
+		Párrafo 4
+	</p>
+
+
+	<!--
+		Gestión de eventos mediante funciones externas
+		La función no tiene acceso a this, hay que pasárselo 
+		cómo argumento.
+	 -->
+	<p onclick="pulsar(this);">
+		Párrafo 1
+	</p>
+	<p onclick="pulsar(this);">
+		Párrafo 2
+	</p>
+	<p onclick="pulsar(this);">
+		Párrafo 3
+	</p>
+	<p onclick="pulsar(this);">
+		Párrafo 4
+	</p>
+
+	<!--
+		Gestión de eventos mediante métodos asociados al
+		elemento del DOM (todo en el código JavaScript).
+		Eventos semánticos.
+	-->
+	<p id="pa1">Párrafo 1</p>
+	<p id="pa2">Párrafo 2</p>
+	<p id="pa3">Párrafo 3</p>
+	<p id="pa4">Párrafo 4</p>
+
+	<img id="img" src="imagenes/bart1.png" alt="Bart Simpson">
+
+	<div>Escribe en el siguiente cuadro: 
+	<input type="text" onkeypress="detectarTecla();">
+	</div>
+
+	<input type="button" value="Pulsame" onclick="jugarConObjetos();">
+</body>
+</html>
