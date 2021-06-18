@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Partido de fútbol</title>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+<h1>Partido de fútbol</h1>
+<form id="formFutbol" action="procesa.php" method="get">
+	<fieldset>
+	<p>
+	<label for="equipoLocal">Nombre del equipo local:</label>
+	<input type="text" id="equipoLocal" name="equipoLocal" 
+		onkeyup="comprobar();"/>
+	</p>
+	<p>
+	<label for="equipoVisitante">Nombre del equipo visitante:</label>
+	<input type="text" id="equipoVisitante" name="equipoVisitante" 
+		onkeyup="comprobar();"/>
+	</p>
+	<p>
+	<label for="golesLocal">Goles del equipo local:</label>
+	<input type="text" id="golesLocal" name="golesLocal" 
+		onkeyup="comprobar();"/>
+	</p>
+	<p>
+	<label for="golesVisitante">Goles del equipo visitante:</label>
+	<input type="text" id="golesVisitante" name="golesVisitante" 
+		onkeyup="comprobar();"/>
+	</p>
+	</fieldset>
+	<h2 id="resultado">Faltan datos, no hay resultado todavía</h2>
+	<input type="button" value="Enviar partido" onclick="enviar();" />
+</form>
+</body>
+</html>
