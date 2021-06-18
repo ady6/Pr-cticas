@@ -1,0 +1,91 @@
+header {
+grid-area: cabecera;
+}
+
+#menu1 {
+grid-area: menu1;
+}
+
+#menu2 {
+grid-area: menu2;
+}
+
+section {
+grid-area: contenido;
+}
+
+aside {
+grid-area: banner;
+}
+
+#social {
+grid-area: social;
+}
+
+footer {
+grid-area: pie;																																				q
+}
+
+main {
+display: grid;
+  grid-template-areas:
+    'cabecera cabecera cabecera cabecera cabecera cabecera'
+    'menu1 menu1 menu1 menu1 menu1 menu1'
+    'menu2 contenido contenido contenido contenido banner'
+    'social pie pie pie pie pie';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+main > * {
+	background-color: aqua;
+    padding: 10px;
+}
+
+@media screen and (max-width:1000px){
+	main {
+	  grid-template-areas:
+	    'cabecera cabecera cabecera cabecera cabecera cabecera'
+	    'menu1 menu1 menu1 menu1 menu1 menu1'
+	    'menu2 menu2 menu2 menu2 menu2 menu2'
+	    'contenido contenido contenido contenido contenido banner'
+	    'social social social social social social'
+	    'pie pie pie pie pie pie';
+	  grid-gap: 7px;
+	  padding: 7px;
+	}
+}
+
+@media screen and (max-width:700px){
+	main {
+	  grid-template-areas:
+	    'cabecera cabecera cabecera cabecera cabecera cabecera'
+	    'menu1 menu1 menu1 menu1 menu1 menu1'
+	    'menu2 menu2 menu2 menu2 menu2 menu2'
+	    'contenido contenido contenido contenido contenido contenido'
+	    'banner banner banner banner banner banner'
+	    'social social social social social social'
+	    'pie pie pie pie pie pie';
+	  grid-gap: 5px;
+	  padding: 5px;
+	}
+}
+
+table {
+	width: 100%;
+   border: 1px solid ;
+   border-collapse: separate;
+   border-spacing: 5px;
+   background: white url("gradient.gif") bottom left repeat-x;
+   color: #FF00FB;
+}
+td, th {
+   background: #A8FFFD;
+   color: #000;
+   text-align: center;
+}
+td{
+	color: black;
+	text-align: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description"
+		content="Mi web responsive">
+		<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>Web responsive con javascript</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<main>
+		<header>cabecera</header>
+		<nav id="menu1">Menú 1</nav>
+		<nav id="menu2">Menú 2</nav>
+		<section>
+			<table>
+  <tbody>
+    <tr>
+      <td>
+      	<h2>¿A qué jugamos hoy?</h2>
+      	<button id="games" onclick="juego();">Descúbrelo</button>
+        <p>
+            <img id="img" src="imagenes/1.jpg">
+          </p>
+
+      </td>
+      <td>
+      	<label>Selecciona un juego:</label>
+      	<select	 id="juegos" onchange="cargarFoto();">
+    		<option value="1.jpg">Warzone</option>
+    		<option value="2.jpg">Overwatch</option>
+    		<option value="3.jpg">The Witcher</option>
+    		<option value="4.jpg">SpiderMan</option>
+		    <option value="5.jpg">Fortnite</option>		
+      	</select>
+      		<p>
+      			<img id="imagen" src="imagenes/1.jpg">
+      		</p>
+      </td>
+    </tr>
+    <tr>                          
+      <td>
+      	<label>	Escribe un número</label>
+        <input type="number" id="numero"
+        oninput="calcularFactorial();">
+        <p id="factorial"></p>
+      </td>
+      <td>
+      	<label>  Escribe un número</label>
+        <input type="number" id="numeropar"
+        oninput="calcularPar();">
+        <p id="par"></p>
+      </td>
+    </tr>
+  </tbody>
+  
+</table>
+		</section>
+		<aside>Banner</aside>
+		<div id="social">social</div>
+		<footer>Pie de página</footer>
+	</main>
+</body>
+</html>
